@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+--darkCyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+--veryDarkBlue: hsl(212, 21%, 14%);
+--darkGrayishBlue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:  var(--cream);
+}
+
+.card-container{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    background-color: var(--white);
+    margin: auto;
+    border-radius: 1rem;
+}
+
+h1, h2 {
+    font-family: 'Fraunces', serif;
+
+}
+
+h1{
+  width: 90%;
+  padding: .5rem 0;
+}
+
+p{
+    font-size: .875rem;
+}
+
+.img{
+    width: 50%;
+    height: 100%;
+    
+}
+
+#perfume-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.product-description{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.description{
+    line-height: 1.6;
+}
+
+.price-container{
+    padding: 1rem 0;
+}
+.price-container h2{
+    color: var(--darkCyan);
+}
+
+
+.price-container span{
+    font-size: .75rem;
+    text-decoration: line-through;
+    color: var(--darkGrayishBlue);
+}
+
+#btn{
+    width: 90%;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border: 0;
+    border-radius: .7rem;
+    background-color: var(--darkCyan);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#btn:hover{
+    background-color: var(--veryDarkBlue);
+}
+
+@media screen and (max-width: 720px) {
+
+    .card-container{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .product-description{
+        width: 70%;
+        height: 80%;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    h1, h2{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+    
+    #btn{
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .card-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .product-description{
+        width: 80%;
+        height: 80%;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    h1, h2{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+    
+    #btn{
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
